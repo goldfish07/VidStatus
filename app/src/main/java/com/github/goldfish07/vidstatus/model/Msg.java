@@ -16,7 +16,7 @@ public class Msg {
     @SerializedName("status")
     String status;
     @SerializedName("is_block")
-    boolean is_block;
+    int is_block;
     @SerializedName("description")
     String description;
     @SerializedName("country")
@@ -30,9 +30,9 @@ public class Msg {
     @SerializedName("fb_id")
     String fb_id;
     @SerializedName("userInfo")
-    List<UserInfo> userInfo = new ArrayList<>();
+    UserInfo userInfo = new UserInfo();
     @SerializedName("count")
-    List<Count> count = new ArrayList<>();
+    Count count = new Count();
     @SerializedName("video")
     String video;
     @SerializedName("thum")
@@ -40,17 +40,17 @@ public class Msg {
     @SerializedName("gif")
     String gif;
     @SerializedName("sound")
-    List<Sound> sound = new ArrayList<>();
+    Sound sound = new Sound();
     @SerializedName("created")
     String created;
     @SerializedName("__v")
     int __v;
 
-    public List<Sound> getSound() {
+    public Sound getSound() {
         return sound;
     }
 
-    public void setSound(List<Sound> sound) {
+    public void setSound(Sound sound) {
         this.sound = sound;
     }
 
@@ -102,11 +102,11 @@ public class Msg {
         this.status = status;
     }
 
-    public boolean isIs_block() {
+    public int isIs_block() {
         return is_block;
     }
 
-    public void setIs_block(boolean is_block) {
+    public void setIs_block(int is_block) {
         this.is_block = is_block;
     }
 
@@ -158,19 +158,19 @@ public class Msg {
         this.fb_id = fb_id;
     }
 
-    public List<UserInfo> getUserInfo() {
+    public UserInfo getUserInfo() {
         return userInfo;
     }
 
-    public void setUserInfo(List<UserInfo> userInfo) {
+    public void setUserInfo(UserInfo userInfo) {
         this.userInfo = userInfo;
     }
 
-    public List<Count> getCount() {
+    public Count getCount() {
         return count;
     }
 
-    public void setCount(List<Count> count) {
+    public void setCount(Count count) {
         this.count = count;
     }
 
