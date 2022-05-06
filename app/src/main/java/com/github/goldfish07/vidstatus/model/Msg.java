@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Msg {
+
     @SerializedName("tp")
     int tp;
     @SerializedName("uid")
@@ -38,6 +39,36 @@ public class Msg {
     String thum;
     @SerializedName("gif")
     String gif;
+    @SerializedName("sound")
+    List<Sound> sound = new ArrayList<>();
+    @SerializedName("created")
+    String created;
+    @SerializedName("__v")
+    int __v;
+
+    public List<Sound> getSound() {
+        return sound;
+    }
+
+    public void setSound(List<Sound> sound) {
+        this.sound = sound;
+    }
+
+    public String getCreated() {
+        return created;
+    }
+
+    public void setCreated(String created) {
+        this.created = created;
+    }
+
+    public int get__v() {
+        return __v;
+    }
+
+    public void set__v(int __v) {
+        this.__v = __v;
+    }
 
     public int getTp() {
         return tp;
