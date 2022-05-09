@@ -11,6 +11,8 @@ public class Msg {
     int tp;
     @SerializedName("uid")
     String uid;
+    @SerializedName("liked")
+    int liked;
     @SerializedName("score")
     long score;
     @SerializedName("status")
@@ -29,7 +31,7 @@ public class Msg {
     String id;
     @SerializedName("fb_id")
     String fb_id;
-    @SerializedName("userInfo")
+    @SerializedName("user_info")
     UserInfo userInfo = new UserInfo();
     @SerializedName("count")
     Count count = new Count();
@@ -45,6 +47,19 @@ public class Msg {
     String created;
     @SerializedName("__v")
     int __v;
+
+    public int getLiked() {
+        return liked;
+    }
+
+    public void setLiked(int liked) {
+        this.liked = liked;
+    }
+
+    public int getIs_block() {
+        return is_block;
+    }
+
 
     public Sound getSound() {
         return sound;

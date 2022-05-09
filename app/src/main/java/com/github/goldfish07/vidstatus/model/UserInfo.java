@@ -6,18 +6,25 @@ public class UserInfo {
 
     @SerializedName("first_name")
     String first_name;
+
     @SerializedName("last_name")
     String last_name;
+
     @SerializedName("fb_id")
     String fb_id;
+
     @SerializedName("profile_pic")
     String profile_pic;
+
     @SerializedName("gender")
     String gender;
+
     @SerializedName("verified")
     String verified;
+
     @SerializedName("_id")
     String _id;
+
     @SerializedName("username")
     String username;
 
